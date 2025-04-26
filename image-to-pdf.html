@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to PDF Converter - Abuljan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .converter {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input[type="file"] {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Image to PDF Converter</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="converter">
+      <h2>Upload Images</h2>
+      <input type="file" id="fileInput" multiple accept="image/*">
+      <br>
+      <button onclick="convertToPDF()">Convert to PDF</button>
+      <p id="status"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Abuljan. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    async function convertToPDF() {
+      const { jsPDF } = window.jspdf;
+      const pdf = new jsPDF();
+      const files = document.getElementById('fileInput').files;
+      if (files.length === 0) {
+        document.getElementById('status').innerText = 'Please select at least one image.';
+        return;
+      }
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+        reader.onload = function(event) {
+          const img = new Image();
+          img.onload = function() {
+            pdf.addImage(img, 'JPEG', 10, 10, 180, 160);
+            if (i < files.length - 1) pdf.addPage();
+            if (i === files.length - 1) {
+              pdf.save('converted.pdf');
+              document.getElementById('status').innerText = 'PDF created successfully!';
+            }
+          }
+          img.src = event.target.result;
+        }
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+
+</body>
+</html>
