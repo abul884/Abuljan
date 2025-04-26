@@ -2,44 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apps - Abuljan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>My Apps</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="apps.html" class="active">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Our Apps</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="apps.html" class="active">Apps</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <h2>Featured Apps</h2>
-
-    <div class="app-grid">
+  <main>
+    <section class="apps-list">
       <div class="app-card">
-        <h3>Image to PDF Converter</h3>
-        <p>Convert your images into PDFs easily with this fast tool.</p>
-        <a href="app.html" class="btn">Open App</a>
+        <h2>Image to PDF Converter</h2>
+        <p>Convert your images into PDF easily. Fast and Free!</p>
+        <a href="image-to-pdf.html" class="btn">Open App</a>
       </div>
 
-      <!-- You can add more apps here later -->
-
-    </div>
+      <div class="app-card">
+        <h2>Coming Soon</h2>
+        <p>More amazing apps are on the way. Stay tuned!</p>
+        <a href="#" class="btn disabled">Coming Soon</a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Abuljan. All rights reserved.</p>
-    </div>
+    <p>© 2025 Abuljan. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
