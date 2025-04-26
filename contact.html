@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - Abuljan</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Abuljan</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="apps.html">Apps</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <p>You can reach me via email at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <!-- Alternatively, embed a contact form here -->
-    </section>
+  <main class="container">
+    <h2>Get in Touch</h2>
+    <p>Have a question, suggestion, or just want to say hi? Feel free to contact me!</p>
+
+    <form action="https://formspree.io/f/mnqewgjk" method="POST" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
