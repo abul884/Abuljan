@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apps - Abuljan</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>Abuljan</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="apps.html" class="active">Apps</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Abuljan Apps</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apps.html" class="active">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="apps">
-      <h2>My Applications</h2>
-      <ul>
-        <li><a href="image-to-pdf.html">Image to PDF Converter</a></li>
-        <!-- Add more apps as needed -->
-      </ul>
-    </section>
-  </main>
+  <section class="hero">
+    <div class="container">
+      <h2>Our Apps</h2>
+      <p>Explore our collection of useful tools and apps created for you!</p>
+    </div>
+  </section>
+
+  <section class="apps">
+    <div class="container">
+
+      <div class="app-card">
+        <h3>Image to PDF Converter</h3>
+        <p>Convert images into PDF easily and quickly.</p>
+        <a href="your-app-link.html" class="btn">Open App</a>
+      </div>
+
+      <div class="app-card">
+        <h3>Coming Soon</h3>
+        <p>More apps will be available here shortly. Stay tuned!</p>
+        <a href="#" class="btn">Coming Soon</a>
+      </div>
+
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
