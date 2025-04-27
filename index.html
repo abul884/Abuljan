@@ -60,5 +60,23 @@ html {
       <p>&copy; 2025 Abuljan. All rights reserved.</p>
     </div>
   </footer>
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = {
+    threshold: 0.2,
+  };
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = 'none';
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
 </body>
 </html>
