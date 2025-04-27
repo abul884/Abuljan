@@ -1,76 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abuljan - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Abuljan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Abuljan</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="apps.html">Apps</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Abuljan</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to Abuljan Website</h2>
-            <p>Discover amazing apps, projects, and more.</p>
-            <a href="apps.html" class="btn">Explore Apps</a>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Abuljan</h2>
+      <p>Your destination for apps, projects, and creativity!</p>
+      <a href="apps.html" class="btn">Explore Apps</a>
+      <a href="about.html" class="btn">Learn More</a>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+  </section>
 
-    <section class="features">
-        <div class="container">
-            <div class="feature-box">
-                <h3>Fast</h3>
-                <p>Our apps are optimized for performance and speed.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Secure</h3>
-                <p>Security is our top priority for all users.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Easy to Use</h3>
-                <p>Simple designs with powerful features.</p>
-            </div>
-        </div>
-    </section>
+  <section class="content">
+    <div class="container">
+      <h2>What We Offer</h2>
+      <p>Discover amazing apps, useful tools, and creative ideas — all in one place.  
+      Stay tuned for more updates and projects coming soon!</p>
+    </div>
+  </section>
 
-        <!-- Footer -->
-    <footer>
-      <p>&copy; <span id="year"></span> Abuljan. All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript to update the year automatically -->
-    <script>
-      const yearSpan = document.getElementById('year');
-      yearSpan.textContent = new Date().getFullYear();
-    </script>
-    
-  </body>
-</html>
-
-<script>
-  window.addEventListener('scroll', function() {
-    var footer = document.getElementById('footer');
-    var rect = footer.getBoundingClientRect();
-    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    if (rect.top <= windowHeight - 50) {
-      footer.style.opacity = '1';
-      footer.style.transform = 'translateY(0)';
-    }
-  });
-</script>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
