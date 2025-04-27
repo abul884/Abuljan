@@ -7,50 +7,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>Contact Abuljan</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="apps.html">Apps</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Abuljan</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="content">
-      <h2>Get in Touch</h2>
-      <p>If you have any questions, feedback, or partnership ideas, feel free to reach out to us!</p>
-
-      <form action="https://formspree.io/f/mwkgyyoo" method="POST" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
+  <section class="content">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Feel free to reach out through the form below:</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    </div>
   </footer>
-<footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center; margin-top: 40px;">
-  <div>
-    <p>&copy; 2025 Abuljan. All Rights Reserved.</p>
-    <p>
-      <a href="https://github.com/abul884" style="color: #fff; text-decoration: underline;" target="_blank">GitHub</a> |
-      <a href="https://abul884.github.io/Abuljan/" style="color: #fff; text-decoration: underline;" target="_blank">Home</a>
-    </p>
-  </div>
-</footer>
-  
 </body>
 </html>
