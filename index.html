@@ -46,19 +46,20 @@
         </div>
     </section>
 
+        <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Abuljan. All rights reserved.</p>
-        </div>
-    <footer id="footer" style="background-color: #333; color: #fff; padding: 20px 0; text-align: center; margin-top: 40px; opacity: 0; transform: translateY(30px); transition: all 1s ease;">
-  <div>
-    <p>&copy; 2025 Abuljan. All Rights Reserved.</p>
-    <p>
-      <a href="https://github.com/abul884" style="color: #fff; text-decoration: underline;" target="_blank">GitHub</a> |
-      <a href="https://abul884.github.io/Abuljan/" style="color: #fff; text-decoration: underline;" target="_blank">Home</a>
-    </p>
-  </div>
-</footer>
+      <p>&copy; <span id="year"></span> Abuljan. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to update the year automatically -->
+    <script>
+      const yearSpan = document.getElementById('year');
+      yearSpan.textContent = new Date().getFullYear();
+    </script>
+    
+  </body>
+</html>
+
 <script>
   window.addEventListener('scroll', function() {
     var footer = document.getElementById('footer');
