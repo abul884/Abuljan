@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+</style>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to Abuljan</title>
@@ -21,7 +37,7 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero fade-in">
     <div class="container">
       <h2>Welcome to Abuljan</h2>
       <p>Your destination for apps, projects, and creativity!</p>
@@ -31,7 +47,7 @@
     </div>
   </section>
 
-  <section class="content">
+  <section class="content fade-in">
     <div class="container">
       <h2>What We Offer</h2>
       <p>Discover amazing apps, useful tools, and creative ideas — all in one place.  
@@ -40,7 +56,7 @@
   </section>
 
   <footer>
-    <div class="container">
+    <div class="container class="fade-in">
       <p>&copy; 2025 Abuljan. All rights reserved.</p>
     </div>
   </footer>
