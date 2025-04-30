@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Abuljan</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- SEO Meta Tags -->
-<meta name="description" content="Welcome to Abuljan - A place to explore apps, tools, and useful resources.">
-<meta name="keywords" content="Abuljan, apps, tools, image to PDF, tech, converter">
-<meta name="author" content="Abuljan">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Abuljan - Apps and Tools">
-<meta property="og:description" content="Explore helpful apps and tools built with care.">
-<meta property="og:image" content="https://abul884.github.io/Abuljan/favicon.png">
-<meta property="og:url" content="https://abul884.github.io/Abuljan/">
-<meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Abuljan</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Abuljan</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <h1>Welcome to Abuljan</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="apps.html">Apps</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <main class="container fade-in">
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        Welcome to Abuljan! I’m passionate about building helpful web apps and sharing creative digital tools with the world. This site showcases the projects I’ve made using HTML, CSS, and JavaScript — all from mobile!
+      </p>
+      <p>
+        I'm focused on creating simple, useful, and fast applications that anyone can use. Whether you're converting images to PDF, exploring web tools, or just browsing, I hope you find something useful here.
+      </p>
+    </section>
 
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Welcome to Abuljan! This website is created to share my apps, projects, tools, and other amazing creations with the world.</p>
-            <p>Here, you will find useful apps, helpful tools, and a lot more interesting content. I always aim to provide simple, fast, and beautiful experiences.</p>
-            <p>Stay connected, and explore everything that we are building!</p>
-        </section>
-    </main>
+    <section class="section">
+      <h3>What I Offer</h3>
+      <ul>
+        <li>Free tools and apps built using web technologies</li>
+        <li>Clean, mobile-friendly design</li>
+        <li>Fast-loading and ad-supported pages for monetization</li>
+      </ul>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Abuljan. All rights reserved.</p>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Abuljan. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script>
-        // Set the current year automatically
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
